@@ -40,8 +40,7 @@ function FAQAccordion({ faqs }: { faqs: { question: string; answer?: string; exp
 export default function LandingPage() {
   return (
     <div className="min-h-screen w-full bg-black text-white flex flex-col items-center">
-      {/* Header with Navbar */}
-      <Navbar />
+
 
       {/* Hero Section */}
       <section className="w-full flex flex-col items-center justify-center text-center py-24 px-4 max-w-2xl mx-auto">
