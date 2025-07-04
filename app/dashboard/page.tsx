@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { useUser, SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, useAuth } from "@clerk/nextjs"
+import { useAuth } from "@clerk/nextjs"
 import { useRouter } from "next/navigation"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/app/components/ui/card"
 import { Badge } from "@/app/components/ui/badge"
@@ -49,7 +49,6 @@ const mockMatches = [
 
 export default function DashboardPage() {
   const { isSignedIn } = useAuth()
-  const { user } = useUser()
   const router = useRouter()
   const [skipped, setSkipped] = useState<string[]>([])
   const [requested, setRequested] = useState<string[]>([])

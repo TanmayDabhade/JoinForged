@@ -2,7 +2,6 @@
 
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/app/components/ui/card"
 import { Badge } from "@/app/components/ui/badge"
-import { Button } from "@/app/components/ui/button"
 import { Linkedin, Github } from "lucide-react"
 
 const pendingRequests = [
@@ -35,7 +34,7 @@ export default function ConnectionsPage() {
     <div className="min-h-screen bg-background flex flex-col items-center p-6">
       <div className="w-full max-w-3xl">
         <h1 className="text-3xl font-bold mb-2">Pending Connection Requests</h1>
-        <p className="text-muted-foreground mb-8">These are the requests you've sent that are still pending acceptance.</p>
+        <p className="text-muted-foreground mb-8">These are the requests you&apos;ve sent that are still pending acceptance.</p>
         <div className="space-y-6">
           {pendingRequests.length === 0 && (
             <div className="text-center text-muted-foreground py-12">No pending requests. Start connecting with more cofounders!</div>

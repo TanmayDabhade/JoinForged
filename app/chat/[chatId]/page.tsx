@@ -8,7 +8,7 @@ const mockMessages = [
   { id: 2, sender: "Alex Kim", content: "Same here! Looking forward to chatting.", created_at: "10:01 AM" },
 ]
 
-export default function ChatPage({ params }: { params: { chatId: string } }) {
+export default function ChatPage() {
   const [messages, setMessages] = useState(mockMessages)
   const [input, setInput] = useState("")
   const messagesEndRef = useRef<HTMLDivElement>(null)

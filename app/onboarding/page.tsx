@@ -15,26 +15,29 @@ const values = [
   'Integrity', 'Creativity', 'Leadership', 'Learning', 'Sustainability'
 ]
 
+type FormField = keyof typeof initialFormData;
+const initialFormData = {
+  name: '',
+  role: '' as typeof roles[number] | '',
+  skills: [] as string[],
+  commitment: '' as typeof commitments[number] | '',
+  values: [] as string[],
+  motivation: '',
+  communication: '' as typeof communications[number] | '',
+  industry: '',
+  timezone: '',
+  availability: 10,
+  linkedin: '',
+  github: '',
+  personal_site: ''
+}
+
 export default function OnboardingPage() {
   const { user } = useUser()
   const [step, setStep] = useState(1)
-  const [formData, setFormData] = useState({
-    name: '',
-    role: '' as typeof roles[number] | '',
-    skills: [] as string[],
-    commitment: '' as typeof commitments[number] | '',
-    values: [] as string[],
-    motivation: '',
-    communication: '' as typeof communications[number] | '',
-    industry: '',
-    timezone: '',
-    availability: 10,
-    linkedin: '',
-    github: '',
-    personal_site: ''
-  })
+  const [formData, setFormData] = useState(initialFormData)
 
-  const updateFormData = (field: string, value: any) => {
+  const updateFormData = <K extends keyof typeof initialFormData>(field: K, value: typeof initialFormData[K]) => {
     setFormData(prev => ({ ...prev, [field]: value }))
   }
 
@@ -122,7 +125,7 @@ export default function OnboardingPage() {
                   }}
                 />
                 <Button onClick={() => {
-                  const input = document.querySelector('input[placeholder="Add a skill"]') as HTMLInputElement
+                  const input = document.querySelector('input[placeholder=\'Add a skill\']') as HTMLInputElement
                   if (input) {
                     addSkill(input.value)
                     input.value = ''
@@ -304,7 +307,7 @@ export default function OnboardingPage() {
         <CardHeader>
           <CardTitle>Complete Your Profile</CardTitle>
           <CardDescription>
-            Step {step} of 5 - Let's find your perfect cofounder match
+            Step {step} of 5 - Let&apos;s find your perfect cofounder match
           </CardDescription>
         </CardHeader>
         <CardContent>
