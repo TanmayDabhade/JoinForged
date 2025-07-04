@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔗 Forged – AI-Powered Cofounder Matching Platform
 
-## Getting Started
+**Forged** helps founders and early-stage builders find the right cofounder — not just based on skills, but on real compatibility.
 
-First, run the development server:
+> Built with: `Next.js` · `Clerk` · `Supabase` · `Gemini AI` · `Shadcn`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧠 What is Forged?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Forged** is a minimalist platform for:
+- Solo founders looking for cofounders
+- Builders seeking compatible partners
+- Startup teams searching for early team members
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Unlike traditional platforms, **Forged uses AI** to deeply understand founders' values, communication styles, availability, and motivations — and match them with others who truly complement them.
 
-## Learn More
+### ✨ Key Features
 
-To learn more about Next.js, take a look at the following resources:
+- 🔐 Fast, secure onboarding using **Clerk Auth**
+- 🧾 Multi-step founder questionnaire (role, skills, values, motivation)
+- 🤖 **AI-powered matchmaking** using Google Gemini
+- 🎯 Compatibility scores + intelligent match summaries
+- 🔗 Simple **connection request flow** (no chat for now)
+- 🌙 Minimalist, dark-themed UI built with **Shadcn**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🖼️ Screenshots
 
-## Deploy on Vercel
+> [Add screenshots here after launch for UI preview]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚙️ Tech Stack
+
+| Purpose         | Tech                        |
+|-----------------|-----------------------------|
+| Frontend        | [Next.js (App Router)](https://nextjs.org/) |
+| UI Components   | [Shadcn UI](https://ui.shadcn.com/) + Tailwind |
+| Auth            | [Clerk](https://clerk.dev) |
+| Backend         | [Supabase](https://supabase.com) |
+| AI Matching     | [Gemini AI (Google)](https://ai.google.dev) |
+| Hosting         | [Vercel](https://vercel.com/) |
+
+---# JoinForged
