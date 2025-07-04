@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { Navbar } from "@/app/components/navbar"
 import { Button } from "@/app/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
@@ -76,7 +75,7 @@ export default function LandingPage() {
             { number: "Step 1:", title: "Apply", description: "Fill out a short form about you and your goals." },
             { number: "Step 2:", title: "Get Matched", description: "We connect you with others looking for the same thing." },
             { number: "Step 3:", title: "Collaborate & Launch", description: "Start talking, sharing, building — or just learning together." },
-          ].map((step, i) => (
+          ].map(step => (
             <GlassCard key={step.number} className="flex flex-col md:flex-row items-center gap-6 text-left md:text-left">
               <div className="flex-shrink-0 w-32 h-16 rounded-full flex items-center justify-center text-lg font-bold bg-white/10 border border-white/10 text-white/80 mb-4 md:mb-0 md:mr-8">{step.number}</div>
               <div className="flex-1">
@@ -100,7 +99,7 @@ export default function LandingPage() {
       {/* FAQ Section */}
       <section className="w-full max-w-3xl mx-auto py-20 px-4">
         <h2 className="text-3xl font-bold text-center mb-2">Everything you need to know.</h2>
-        <h3 className="text-lg text-gray-400 text-center mb-8">Got questions? We've got answers. Here's everything you need to know before getting started.</h3>
+        <h3 className="text-lg text-gray-400 text-center mb-8">Got questions? We&apos;ve got answers. Here&apos;s everything you need to know before getting started.</h3>
         <FAQAccordion faqs={[
           { question: "Who is the community for?", answer: "This is for students, early builders, and aspiring entrepreneurs who want to meet like-minded people to start something meaningful together — whether you have an idea or are looking to join one.", expandable: true },
           { question: "Do I need to have a startup idea to join?", expandable: true },

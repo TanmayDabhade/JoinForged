@@ -15,7 +15,6 @@ const values = [
   'Integrity', 'Creativity', 'Leadership', 'Learning', 'Sustainability'
 ]
 
-type FormField = keyof typeof initialFormData;
 const initialFormData = {
   name: '',
   role: '' as typeof roles[number] | '',
